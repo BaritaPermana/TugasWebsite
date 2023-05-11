@@ -1,0 +1,201 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap);
+
+input,
+nav ul {
+    background-color: bisque
+}
+
+.card {
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, .2)
+}
+
+.header,
+.profile {
+    background-size: cover;
+    background-position: center
+}
+
+footer,
+nav ul li a:hover {
+    background-color: #6b5f50
+}
+
+.header,
+footer {
+    color: #fff
+}
+
+body {
+    font-family: Quicksand, sans-serif;
+    margin: 0;
+    padding: 0
+}
+
+a {
+    text-decoration: none;
+    color: #000
+}
+
+header {
+    flex-direction: column;
+    display: inline
+}
+
+.header,
+main {
+    display: flex;
+    flex-direction: column
+}
+
+.header {
+    background-image: url('../image/header.png');
+    padding: 5vw
+}
+
+nav {
+    position: sticky;
+    top: 0
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+    margin: 0;
+    padding: 25px 0
+}
+
+nav ul li {
+    list-style-type: none
+}
+
+nav ul li a:hover {
+    color: #fff;
+    padding: 25px 5px
+}
+
+main {
+    margin: 5vw;
+    text-align: justify
+}
+
+.content {
+    flex-direction: column;
+    display: flex
+}
+
+article .imgopening {
+    float: left
+}
+
+.card {
+    border-radius: 5px;
+    padding: 2vw 4vw;
+    margin: 20px 0;
+    background-color: #fff6ec
+}
+
+.content {
+    gap: 1vw
+}
+
+.profile {
+    display: flex;
+    height: 40vh;
+    width: 20vw;
+    background-image: url('../image/foto.jpg');
+    padding: 0;
+    align-items: end;
+}
+
+.profile h4 {
+    margin: 0;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.profile section {
+    background-color: #aa9983;
+    width: 100%;
+    border-radius: 0 0 5px 5px
+}
+
+.profile section .kontak {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0
+}
+
+.profile section .kontak i {
+    font-size: 30px
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+@media only screen and (max-width:600px) {
+    .header {
+        text-align: center
+    }
+
+    .imgopening {
+        width: 100%
+    }
+
+    .profile {
+        width: 60vw
+    }
+
+    aside {
+        display: flex;
+        justify-content: center
+    }
+}
+
+@media only screen and (min-width:600px) {
+    .header {
+        text-align: center
+    }
+
+    aside {
+        display: flex;
+        justify-content: center
+    }
+
+    .profile {
+        width: 40vw
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .header {
+        text-align: left
+    }
+
+    .content img {
+        width: 50%
+    }
+}
+
+@media only screen and (min-width:992px) {
+    main {
+        flex-direction: row;
+        gap: 3vw
+    }
+
+    .profile {
+        margin-top: 80px;
+        width: 20vw
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .content {
+        flex-direction: row
+    }
+}
